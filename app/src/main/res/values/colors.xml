@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="myThemeDark">#001a83</color>
+    <color name="myThemeDefault">#002de3</color>
+    <color name="myThemeDarkMode">#375fff</color>
+    <color name="myThemeLight">#879fff</color>
+    <color name="myThemeBg">#d2d5f9</color>
+    <color name="myThemeTextActive">#0f1828</color>
+    <color name="myThemeTextOffWhite">#f7f7fc</color>
 </resources>
