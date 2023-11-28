@@ -9,4 +9,7 @@
     <color name="myThemeBg">#d2d5f9</color>
     <color name="myThemeTextActive">#0f1828</color>
     <color name="myThemeTextOffWhite">#f7f7fc</color>
+    <color name="myThemeTextDisabled">#adb5bd</color>
+    <color name="myThemeTextLine">#ededed</color>
+    <color name="transparent">#00EDEDED</color>
 </resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Screens.VerifyOTPActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/left_arrow"
+        android:layout_margin="20dp"
+        app:tint="@color/myThemeTextActive" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Code"
+            android:textColor="@color/myThemeTextActive"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            style="@style/Heading2"/>
+
+        <TextView
+            android:id="@+id/contactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We have sent you an SMS with the code\nto +62 1309 - 1710 - 1920"
+            android:layout_marginHorizontal="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/myThemeTextActive"
+            style="@style/BodyText2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="70dp">
+
+            <EditText
+                android:id="@+id/code1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:background="@drawable/otp_point_shape"
+                android:textColor="@color/myThemeTextActive"
+                android:paddingHorizontal="10dp"
+                style="@style/Heading1"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/code2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:background="@drawable/otp_point_shape"
+                android:textColor="@color/myThemeTextActive"
+                android:paddingHorizontal="10dp"
+                style="@style/Heading1"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/code3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:background="@drawable/otp_point_shape"
+                android:textColor="@color/myThemeTextActive"
+                android:paddingHorizontal="10dp"
+                style="@style/Heading1"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/code4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:maxLength="1"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:background="@drawable/otp_point_shape"
+                android:textColor="@color/myThemeTextActive"
+                android:paddingHorizontal="10dp"
+                style="@style/Heading1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Resend Code"
+        android:textColor="@color/myThemeDefault"
+        style="@style/SubHeading2"/>
+
+</LinearLayout>

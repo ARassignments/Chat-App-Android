@@ -4,6 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Screens.PhoneRegisterActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/left_arrow"
+        android:layout_margin="20dp"
+        app:tint="@color/myThemeTextActive" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Phone Number"
+            android:textColor="@color/myThemeTextActive"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            style="@style/Heading2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please confirm your country code and enter\nyour phone number"
+            android:layout_marginHorizontal="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/myThemeTextActive"
+            style="@style/BodyText2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:background="@drawable/input_bg_shape">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/pakistan_flag"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="+92"
+                    android:textColorHint="@color/myThemeTextDisabled"
+                    android:background="@drawable/input_bg_shape"
+                    style="@style/BodyText1"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone Number"
+                android:padding="15dp"
+                android:textColorHint="@color/myThemeTextDisabled"
+                android:background="@drawable/input_bg_shape"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                style="@style/BodyText1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:text="Continue"
+        style="@style/Btn"/>
+
+    <ProgressBar
+        android:id="@+id/preloader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/myThemeDefault"
+        android:layout_margin="30dp"
+        android:visibility="gone"/>
 
 </LinearLayout>
