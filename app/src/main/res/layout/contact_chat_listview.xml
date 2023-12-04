@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+            
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                android:layout_gravity="center">
+                
+                <ImageView
+                    android:id="@+id/userProfileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test"/>
+                
+            </androidx.cardview.widget.CardView>
+            
+            <LinearLayout
+                android:id="@+id/onlinePoint"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/online_shape"
+                android:layout_gravity="end"/>
+            
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Athalia Putri"
+                    android:textColor="@color/myThemeTextActive"
+                    style="@style/BodyText1"/>
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:layout_gravity="top"
+                    android:textColor="@color/myThemeWeak"
+                    style="@style/MetaData2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good morning, did you sleep well?"
+                    android:textColor="@color/myThemeTextDisabled"
+                    style="@style/MetaData1"/>
+
+                <TextView
+                    android:id="@+id/msgCount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="8dp"
+                    android:textColor="@color/myThemeDark"
+                    android:background="@drawable/chat_count_bg"
+                    style="@style/MetaData3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

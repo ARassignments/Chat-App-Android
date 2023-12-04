@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ChatApp"
         tools:targetApi="31">
         <activity
+            android:name=".Screens.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Screens.VerifyOTPActivity"
             android:exported="false" />
         <activity

@@ -11,5 +11,7 @@
     <color name="myThemeTextOffWhite">#f7f7fc</color>
     <color name="myThemeTextDisabled">#adb5bd</color>
     <color name="myThemeTextLine">#ededed</color>
+    <color name="myThemeSuccess">#2CC069</color>
+    <color name="myThemeWeak">#A4A4A4</color>
     <color name="transparent">#00EDEDED</color>
 </resources>

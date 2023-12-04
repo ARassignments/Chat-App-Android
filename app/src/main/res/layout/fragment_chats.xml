@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Screens.Fragments.ChatsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:layout_margin="20dp"
+        android:textColor="@color/myThemeTextActive"
+        style="@style/SubHeading1"/>
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Placeholder"
+        android:padding="15dp"
+        android:textColorHint="@color/myThemeTextDisabled"
+        android:background="@drawable/input_bg_shape"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/search"
+        android:drawableTint="@color/myThemeTextDisabled"
+        style="@style/BodyText1"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        tools:listitem="@layout/contact_chat_listview"/>
+
+</LinearLayout>
