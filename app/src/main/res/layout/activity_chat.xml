@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myThemeTextOffWhite"
+    tools:context=".Screens.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/left_arrow"
+            android:layout_marginVertical="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            app:tint="@color/myThemeTextActive" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/myThemeTextActive"
+            style="@style/SubHeading1"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        tools:listitem="@layout/chat_listview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/round_add"
+            android:layout_marginVertical="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            app:tint="@color/myThemeTextDisabled" />
+
+        <EditText
+            android:id="@+id/msgInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Message Here..."
+            android:padding="13dp"
+            android:textColorHint="@color/myThemeTextDisabled"
+            android:background="@drawable/input_bg_shape"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:maxLines="5"
+            android:minLines="1"
+            style="@style/BodyText1"/>
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/send"
+            android:layout_marginVertical="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            app:tint="@color/myThemeDefault" />
+
+    </LinearLayout>
+
+</LinearLayout>

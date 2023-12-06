@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginVertical="8dp"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/chat_recieve_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Good morning, did you sleep well?"
+                android:textColor="@color/myThemeTextActive"
+                android:layout_marginBottom="5dp"
+                style="@style/BodyText2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09.45"
+                android:textColor="@color/myThemeTextDisabled"
+                style="@style/MetaData3"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_gravity="end"
+            android:background="@drawable/chat_send_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="K, I'm on my way"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                style="@style/BodyText2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09.45 · Read"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                style="@style/MetaData3"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
