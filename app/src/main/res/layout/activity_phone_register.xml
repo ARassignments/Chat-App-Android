@@ -33,6 +33,7 @@
             style="@style/Heading2"/>
 
         <TextView
+            android:id="@+id/message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Please confirm your country code and enter\nyour phone number"
@@ -75,6 +76,7 @@
             </LinearLayout>
 
             <EditText
+                android:id="@+id/contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,7 +85,7 @@
                 android:textColorHint="@color/myThemeTextDisabled"
                 android:background="@drawable/input_bg_shape"
                 android:inputType="number"
-                android:maxLength="10"
+                android:maxLength="15"
                 android:maxLines="1"
                 style="@style/BodyText1"/>
 
